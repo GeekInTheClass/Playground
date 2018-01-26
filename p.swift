@@ -45,3 +45,15 @@ func test2(input: Int) {
         print("\(input)" + " * " + "\(i)" + " = " + "\(t)")
     }
 }
+
+
+//문제 3
+// transactions값들 중 20.0보다 큰 값들만 저장하고 이 값들을 내림차순으로 정렬하기
+let transactions = [119.99, 34.99, 12.99, 8.99]
+var result :[Double] = []
+for num in transactions{
+    if num >20.0 {
+        result += [num]
+    }
+}
+result.sorted(by: <)
